@@ -21,23 +21,29 @@
     min-height: 100vh;
     padding: 0;
     margin: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: monospace;
   }
   
   /* CSS for navigation */
-  
+  .navcontent{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+  }
   .navbar {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     width: 100%;
-    height: 50px; /* Set a fixed height for the navbar */
+    height: 30px; /* Set a fixed height for the navbar */
     z-index: 10;
   
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    text-align: right;
+
   
     background-color: var(--cg-black);
     color: var(--cg-white);
@@ -47,6 +53,7 @@
   .nav-list {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     position: relative;
     right: 30px;
     list-style: none;
