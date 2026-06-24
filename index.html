@@ -11,17 +11,6 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header class="nav">
-    <div class="nav__inner">
-      <a class="nav__brand" href="index.html">Arjun&nbsp;Ranade</a>
-      <nav class="nav__links">
-        <a href="index.html" data-nav="home">Home</a>
-        <a href="projects.html" data-nav="projects">Projects</a>
-        <a href="about.html" data-nav="about">About</a>
-      </nav>
-    </div>
-  </header>
-
   <main class="wrap">
     <!-- HERO -->
     <section class="hero reveal">
@@ -42,8 +31,8 @@
         </p>
         <p class="lead">I'm interested in building intelligent systems people actually use. So far that's looked like a music platform with 150+ organic users, campus navigation deployed at Cal Poly, and research into multimodal lecture video comprehension.</p>
         <div class="btns">
-          <a class="btn btn--primary" href="projects.html">View Projects</a>
-          <a class="btn" href="about.html">About Me</a>
+          <a class="btn btn--primary" href="#projects">View Projects</a>
+          <a class="btn" href="#about">About Me</a>
         </div>
       </div>
     </section>
@@ -101,6 +90,30 @@
         </div>
       </div>
     </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="reveal">
+      <p class="eyebrow">Selected Work</p>
+      <h2>Projects</h2>
+      <p class="lead">A few things I've built across research and projects!</p>
+    </section>
+    <section class="projects" id="projects-list"></section>
+
+    <!-- ABOUT -->
+    <section id="about" class="reveal">
+      <p class="eyebrow">About</p>
+      <h2>About Me</h2>
+    </section>
+    <section class="about-block reveal">
+      <h3>Interests</h3>
+      <!-- ARJUN: write your interests here. Replace the placeholder paragraph below. -->
+      <p class="placeholder-note">Your interests go here — what you like to build, explore, and tinker with outside of work.</p>
+    </section>
+    <section class="about-block reveal">
+      <h3>Current Focus</h3>
+      <!-- ARJUN: write your current focus here. Replace the placeholder paragraph below. -->
+      <p class="placeholder-note">What you're focused on right now — research, learning goals, or what you're building.</p>
+    </section>
   </main>
 
   <footer class="footer">
@@ -114,6 +127,10 @@
     </div>
   </footer>
 
+  <!-- lightbox for screenshot enlarge -->
+  <div class="lightbox" id="lightbox"><img alt="" /></div>
+
+  <script src="js/projects-data.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -10,17 +10,8 @@
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  /* ---- nav active state ---- */
-  const page = (location.pathname.split("/").pop() || "index.html").toLowerCase();
-  const navKey = page.startsWith("projects") ? "projects"
-               : page.startsWith("about")    ? "about"
-               : "home";
-  document.querySelectorAll(".nav__links a[data-nav]").forEach((a) => {
-    if (a.dataset.nav === navKey) a.classList.add("active");
-  });
-
-  /* ---- render projects (projects.html only) ---- */
-  const mount = document.getElementById("projects");
+  /* ---- render projects ---- */
+  const mount = document.getElementById("projects-list");
   if (mount && typeof PROJECTS !== "undefined") {
     mount.innerHTML = PROJECTS.map(renderProject).join("");
   }
