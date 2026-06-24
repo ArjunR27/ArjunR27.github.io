@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arjun Ranade</title>
+  <meta name="description" content="Arjun Ranade — Computer Science grad student at Cal Poly, AI/ML. Portfolio and projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html">Arjun&nbsp;Ranade</a>
+      <nav class="nav__links">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="projects.html" data-nav="projects">Projects</a>
+        <a href="about.html" data-nav="about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero reveal">
+      <img
+        class="hero__photo"
+        src="assets/profile/arjun.jpg"
+        alt="Arjun Ranade"
+        onerror="this.classList.add('hero__photo--placeholder'); this.removeAttribute('src'); this.alt=''; this.insertAdjacentText('beforeend','add photo →\nassets/profile/arjun.jpg');"
+      />
+      <div>
+        <p class="eyebrow">Software · AI / ML · Backend Infrastructure</p>
+        <h1 class="hero__name">Arjun Ranade</h1>
+        <p class="hero__tag">MS in Computer Science @ Cal Poly - San Luis Obispo</p>
+        <p class="hero__contact">Reach me at
+          <a href="mailto:arjunyranade3@gmail.com">arjunyranade3@gmail.com</a>
+          <span class="hero__contact-sep">·</span>
+          <a href="mailto:ayranade@calpoly.edu">ayranade@calpoly.edu</a>
+        </p>
+        <p class="lead">I'm interested in building intelligent systems people actually use. So far that's looked like a music platform with 150+ organic users, campus navigation deployed at Cal Poly, and research into multimodal lecture video comprehension.</p>
+        <div class="btns">
+          <a class="btn btn--primary" href="projects.html">View Projects</a>
+          <a class="btn" href="about.html">About Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="reveal">
+      <p class="eyebrow">Education</p>
+      <div class="edu-grid">
+        <div class="card">
+          <div class="edu__top">
+            <span class="edu__school"><span class="logo-badge logo-badge--sm logo-badge--calpoly"><img src="assets/logos/cal_poly_logo.jpeg" alt="Cal Poly" onerror="this.parentElement.style.display='none'" /></span>M.S. Computer Science</span>
+            <span class="edu__loc">San Luis Obispo, CA</span>
+          </div>
+          <p class="edu__degree">California Polytechnic State University, San Luis Obispo</p>
+          <p class="edu__honors">Concentration in AI/ML</p>
+        </div>
+        <div class="card">
+          <div class="edu__top">
+            <span class="edu__school"><span class="logo-badge logo-badge--sm logo-badge--calpoly"><img src="assets/logos/cal_poly_logo.jpeg" alt="Cal Poly" onerror="this.parentElement.style.display='none'" /></span>B.S. Computer Science</span>
+            <span class="edu__loc">San Luis Obispo, CA</span>
+          </div>
+          <p class="edu__degree">California Polytechnic State University, San Luis Obispo</p>
+          <p class="edu__honors">Magna Cum Laude · President's List (3×) · Dean's List (10×)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="reveal">
+      <p class="eyebrow">Experience</p>
+      <div class="logos">
+        <div class="logo-card">
+          <div class="logo-card__mark logo-card__brand">
+            <span class="logo-badge logo-badge--calpoly"><img src="assets/logos/cal_poly_logo.jpeg" alt="Cal Poly logo" onerror="this.parentElement.style.display='none'" /></span>
+            <span class="logo-card__name">Cal Poly · San Luis Obispo</span>
+          </div>
+          <span class="logo-card__role">Graduate Student Researcher</span>
+          <span class="logo-card__date">Sep 2025 — Present</span>
+        </div>
+        <div class="logo-card">
+          <div class="logo-card__mark logo-card__brand">
+            <span class="logo-badge"><img src="assets/logos/western_digital_logo.jpg" alt="Western Digital logo" onerror="this.parentElement.style.display='none'" /></span>
+            <span class="logo-card__name">Western Digital</span>
+          </div>
+          <span class="logo-card__role">Software Engineering Intern</span>
+          <span class="logo-card__date">Jun 2025 — Sep 2025</span>
+        </div>
+        <div class="logo-card">
+          <div class="logo-card__mark logo-card__brand">
+            <span class="logo-badge logo-badge--zoomout"><img src="assets/logos/celona_logo.png" alt="Celona logo" onerror="this.parentElement.style.display='none'" /></span>
+            <span class="logo-card__name">Celona</span>
+          </div>
+          <span class="logo-card__role">Software Engineering Intern</span>
+          <span class="logo-card__date">Jun 2024 — Apr 2025</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span class="footer__copy">© <span id="year"></span> Arjun Ranade</span>
+      <nav class="footer__links">
+        <a href="https://github.com/ArjunR27" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/arjun-ranade-902a7a24b/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:arjunyranade3@gmail.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
